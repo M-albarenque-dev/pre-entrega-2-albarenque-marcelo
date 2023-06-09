@@ -353,13 +353,7 @@ ul li a {
     justify-content: center;
 }
 
-/* FOOTER */
-
-footer {
-    display: flex;
-    justify-content: center;
-    padding: 30px;
-}
+/* MEDIA QUERIES */
 
 
 @media (max-width:685px) {
