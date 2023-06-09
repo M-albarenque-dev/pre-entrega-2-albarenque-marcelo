@@ -321,6 +321,54 @@ ul li a {
     padding: 5px;
 }
 
+/* <!-- SECCION NUESTRA MISION - NOSOTROS --> */
+
+.info {
+    display: flex;
+}
+
+.info-texto {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 20px;
+    gap: 15px;
+}
+
+/* <!-- SECCION MAPA --> */
+
+.mapa {
+    display: flex;
+    width: 100%;
+    justify-content: center;
+}
+
+.mapa-texto {
+    display: flex;
+    flex-direction: column;
+    padding: 20px;
+    gap: 15px;
+}
+
+.mapa-texto iframe {
+    width: 100%;
+}
+
+/* <!-- SECCION IMG-NOSOTROS --> */
+
+.img-nosotros {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 15px;
+    padding-bottom: 35px;
+}
+
+.img-nosotros img {
+    border-radius: 6px;
+    box-shadow: 4px 4px 7px 0px #807e7eee;
+}
+
 
 /* <!-- SECCION GUIA DE TALLES --> */
 
@@ -343,7 +391,7 @@ ul li a {
 }
 
 .guia-talles img {
-    width: auto;
+    width: 80%;
     height: 300px;
     border-radius: 14px;
 }

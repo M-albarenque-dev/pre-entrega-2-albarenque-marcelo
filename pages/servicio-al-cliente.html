@@ -15,39 +15,39 @@
     <header>
         <nav class="navbar bg-personalizado navbar-expand-md fixed-top" data-bs-theme="dark">
             <div class="container-fluid">
-              <a class="navbar-brand" href="#">VIRTU</a>
-              <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar" aria-label="Toggle navigation">
+                <a class="navbar-brand" href="#">VIRTU</a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
-              </button>
-              <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasNavbar" aria-labelledby="offcanvasNavbarLabel">
+                </button>
+                <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasNavbar" aria-labelledby="offcanvasNavbarLabel">
                 <div class="offcanvas-header">
-                  <h5 class="offcanvas-title" id="offcanvasNavbarLabel">Offcanvas</h5>
-                  <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+                    <h5 class="offcanvas-title" id="offcanvasNavbarLabel">Offcanvas</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
                 </div>
                 <div class="offcanvas-body">
-                  <ul class="navbar-nav justify-content-end flex-grow-1 pe-3">
+                    <ul class="navbar-nav justify-content-end flex-grow-1 pe-3">
                     <li class="nav-item">
-                      <a class="nav-link active" aria-current="page" href="../index.html">Inicio</a>
+                        <a class="nav-link active" aria-current="page" href="../index.html">Inicio</a>
                     </li>
                     <li class="nav-item">
-                      <a class="nav-link" href="../pages/mujer.html">Mujer</a>
+                        <a class="nav-link" href="../pages/mujer.html">Mujer</a>
                     </li>
                     <li class="nav-item">
                         <a class="nav-link" href="../pages/hombre.html">Hombre</a>
-                      </li>
-                      <li class="nav-item">
+                        </li>
+                        <li class="nav-item">
                         <a class="nav-link" href="../pages/nosotros.html">Nosotros</a>
-                      </li>
-                      <li class="nav-item">
+                        </li>
+                        <li class="nav-item">
                         <a class="nav-link" href="../pages/servicio-al-cliente.html">Servicio</a>
-                      </li>
-                      </ul>
+                        </li>
+                        </ul>
                     </li>
-                  </ul>
+                    </ul>
                 </div>
-              </div>
+                </div>
             </div>
-          </nav>
+            </nav>
     </header>
     <main>
 
@@ -62,101 +62,113 @@
 
         <!-- /* SECCION EN QUE PODEMOS AYUDARTE */ -->
 
-        <section class="ayuda">
-            <h2>En que podemos ayudarte?</h2>
-            <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Aliquid, laborum nam, harum dignissimos nobis nisi cumque, accusantium sequi sit recusandae deleniti quo porro ut ex! Quod sunt aliquam cupiditate cumque.</p>
+        <section class="info text-white">
+            <div class="info-texto">
+                <h2>En que podemos ayudarte?</h2>
+                <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Aliquid, laborum nam, harum dignissimos nobis nisi cumque, accusantium sequi sit recusandae deleniti quo porro ut ex! Quod sunt aliquam cupiditate cumque.</p>
+            </div>
         </section>
 
         <!-- /* SECCION FORMULARIO */ -->
 
-        <form class="form">
-            <div>
-                <label for="nombre">Nombre:</label>
-                <input type="text" name="nombre" placeholder="Ingresa tu nombre">
-            </div>
-            <div>
-                <label for="apellido">Apellido:</label>
-                <input type="text" name="apellido" placeholder="Ingresa tu apellido">
-            </div>
-            <div>
-                <label for="correo">Correo electronico:</label>
-                <input type="email" name="correo" placeholder="Ingresa tu Email">
-            </div>
-            <div>
-                <label for="mensaje">Mensaje:</label>
-                <input type="text" name="mensaje" placeholder="Ingresa tu mensaje">
-            </div>
-            <div>
-                <input type="submit" name="enviar" value="Enviar">
-                <input type="reset" name="reset" value="Resetear">
-            </div>
-        </form>
+        <!-- FORMULARIO -->
+        <div class="container mt-5 text-white border border-secondary p-5">
+            <h2>Contactanos!</h2>
+            <form class="row g-3">
+                <div class="col-md-6">
+                    <label for="nombre" class="form-label">Nombre</label>
+                    <input type="text" class="form-control" placeholder ="Ingresa tu nombre">
+                </div>
+                <div class="col-md-6">
+                    <label for="apellido" class="form-label">Apellido</label>
+                    <input type="text" class="form-control" placeholder ="Ingresa tu apellido">
+                </div>
+                <div class="col-md-8">
+                    <label for="correo" class="form-label">Correo Electrónico</label>
+                    <input type="email" class="form-control" placeholder ="Ingresa tu nombre">
+                </div>
+                <div class="col-md-4">
+                    <label for="telefono" class="form-label">Teléfono</label>
+                    <input type="text" class="form-control" placeholder="Ingrese su teléfono">
+                </div>
+                <div class="col-md-12">
+                    <label for="comentarios" class="form-label">Comentarios / Consultas</label>
+                    <textarea class="form-control" placeholder ="Ingresa tu comentario/consulta..." rows="3" required></textarea>
+                </div>
+                <div class="col-md-12">
+                    <button type="submit" class="btn btn-primary">Submit</button>
+                </div>
+            </form>
+        </div>
 
         <!-- /* SECCION UBICACIÓN */ -->
 
-        <section>
-            <h2>Donde nos ubicamos?</h2>
-            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3277.8459559324892!2d-58.20755772344729!3d-34.759473072898835!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95a32f4e96475ded%3A0x4d1f826b728a2129!2sAv.%2014%20%26%20Av.%20Mitre%2C%20B1880%20Berazategui%2C%20Provincia%20de%20Buenos%20Aires!5e0!3m2!1ses!2sar!4v1682298014211!5m2!1ses!2sar" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+        <section class="mapa text-white">
+            <div class="mapa-texto">
+                <h2>Donde nos ubicamos?</h2>
+                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3277.8459559324892!2d-58.20755772344729!3d-34.759473072898835!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95a32f4e96475ded%3A0x4d1f826b728a2129!2sAv.%2014%20%26%20Av.%20Mitre%2C%20B1880%20Berazategui%2C%20Provincia%20de%20Buenos%20Aires!5e0!3m2!1ses!2sar!4v1682298014211!5m2!1ses!2sar" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+            </div>
         </section>
+
     </main>
 
     <!-- FOOTER -->
 
     <footer>
-      <div class="container-fluid">
-          <div class="row p-5 pb-2 text-white border-top border-secondary">
-              <div class="col-xs-12 col-md-6 col-lg-3">
-                  <p class="h3">VIRTÚ</p>
-                  <p class="text-secondary">Indumentaria</p>
-              </div>
-              <div class="col-xs-12 col-md-6 col-lg-3">
-                  <p class="h5 mb-3">Secciones</p>
-                  <div class="mb-2">
-                      <a class="text-secondary text-decoration-none" href="../index.html">Inicio</a>
-                  </div>
-                  <div class="mb-2">
-                      <a class="text-secondary text-decoration-none" href="./mujer.html">Mujer</a>
-                  </div>
-                  <div class="mb-2">
-                      <a class="text-secondary text-decoration-none" href="./hombre.html">Hombre</a>
-                  </div>
-                  <div class="mb-2">
-                      <a class="text-secondary text-decoration-none" href="./nosotros.html">Nosotros</a>
-                  </div>
-                  <div class="mb-2">
-                      <a class="text-secondary text-decoration-none" href="./servicio-al-cliente.html">Servicio</a>
-                  </div>
-              </div>
-              <div class="col-xs-12 col-md-6 col-lg-3">
-                  <p class="h5 mb-3">Contacto</p>
-                  <div class="mb-2">
-                      <a class="text-secondary text-decoration-none" href="#">Instagram</a>
-                  </div>
-                  <div class="mb-2">
-                      <a class="text-secondary text-decoration-none" href="#">Facebook</a>
-                  </div>
-                  <div class="mb-2">
-                      <a class="text-secondary text-decoration-none" href="#">Twitter</a>
-                  </div>
-              </div>
-              <div class="col-xs-12 col-md-6 col-lg-3">
-                  <p class="h5 mb-3">Links</p>
-                  <div class="mb-2">
-                      <a class="text-secondary text-decoration-none" href="#">Política de privacidad</a>
-                  </div>
-                  <div class="mb-2">
-                      <a class="text-secondary text-decoration-none" href="#">Términos y condiciones</a>
-                  </div>
-                  <div class="mb-2">
-                      <a class="text-secondary text-decoration-none" href="#">Compañía</a>
-                  </div>
-              </div>
-              <div class="col-xs-12 pt-5">
-                  <p class="text-white text-center">Copyright - All  rights reserved © 2023</p>
-              </div>
-          </div>
-      </div>
-  </footer>
+        <div class="container-fluid">
+            <div class="row p-5 pb-2 text-white border-top border-secondary">
+                <div class="col-xs-12 col-md-6 col-lg-3">
+                    <p class="h3">VIRTÚ</p>
+                    <p class="text-secondary">Indumentaria</p>
+                </div>
+                <div class="col-xs-12 col-md-6 col-lg-3">
+                    <p class="h5 mb-3">Secciones</p>
+                    <div class="mb-2">
+                        <a class="text-secondary text-decoration-none" href="../index.html">Inicio</a>
+                    </div>
+                    <div class="mb-2">
+                        <a class="text-secondary text-decoration-none" href="./mujer.html">Mujer</a>
+                    </div>
+                    <div class="mb-2">
+                        <a class="text-secondary text-decoration-none" href="./hombre.html">Hombre</a>
+                    </div>
+                    <div class="mb-2">
+                        <a class="text-secondary text-decoration-none" href="./nosotros.html">Nosotros</a>
+                    </div>
+                    <div class="mb-2">
+                        <a class="text-secondary text-decoration-none" href="./servicio-al-cliente.html">Servicio</a>
+                    </div>
+                </div>
+                <div class="col-xs-12 col-md-6 col-lg-3">
+                    <p class="h5 mb-3">Contacto</p>
+                    <div class="mb-2">
+                        <a class="text-secondary text-decoration-none" href="#">Instagram</a>
+                    </div>
+                    <div class="mb-2">
+                        <a class="text-secondary text-decoration-none" href="#">Facebook</a>
+                    </div>
+                    <div class="mb-2">
+                        <a class="text-secondary text-decoration-none" href="#">Twitter</a>
+                    </div>
+                </div>
+                <div class="col-xs-12 col-md-6 col-lg-3">
+                    <p class="h5 mb-3">Links</p>
+                    <div class="mb-2">
+                        <a class="text-secondary text-decoration-none" href="#">Política de privacidad</a>
+                    </div>
+                    <div class="mb-2">
+                        <a class="text-secondary text-decoration-none" href="#">Términos y condiciones</a>
+                    </div>
+                    <div class="mb-2">
+                        <a class="text-secondary text-decoration-none" href="#">Compañía</a>
+                    </div>
+                </div>
+                <div class="col-xs-12 pt-5">
+                    <p class="text-white text-center">Copyright - All  rights reserved © 2023</p>
+                </div>
+            </div>
+        </div>
+    </footer>
 
     <!-- SCRIPT DE BOOTSTRAP -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ENjdO4Dr2bkBIFxQpeoTz1HIcje39Wm4jDKdf19U8gI4ddQ3GYNS7NTKfAdVQSZe" crossorigin="anonymous"></script>
