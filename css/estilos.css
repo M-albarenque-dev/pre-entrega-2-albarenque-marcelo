@@ -18,6 +18,7 @@ body {
 
 /* HEADER */
 
+
 .bg-personalizado {
     background-color: black;
     padding: 15px;
@@ -40,26 +41,6 @@ body {
     border-radius: 15px;
     color: bisque;
 }
-
-/* header {
-    position: sticky;
-    z-index: 3;
-    top: 0;
-    background-color: black;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    border-bottom: solid 1px grey;
-}
-
-.logo {
-    display: flex;
-}
-
-header .logo {
-    width: 70px;
-    height: 70px;
-} */
 
 ul li {
     list-style: none;
@@ -310,14 +291,15 @@ ul li a {
 
 .caja-content a {
     color: black;
-    align-self: flex-end;
+    align-self: center;
     padding: 5px;
     border: 2px solid black;
-    border-radius: 5px;
+    border-radius: 10px;
+    text-decoration: none;
 }
 
 .caja-content p {
-    text-align: inherit;
+    text-align: center;
     padding: 5px;
 }
 
@@ -331,6 +313,7 @@ ul li a {
     display: flex;
     flex-direction: column;
     align-items: center;
+    text-align: center;
     padding: 20px;
     gap: 15px;
 }
@@ -433,4 +416,24 @@ ul li a {
         text-shadow: 0px 0px 8px rgb(0, 0, 0, 0.8);
     }
 
+}
+
+@media (max-width:870px) {
+    .tarjetas {
+        flex-direction: column;
+        align-items: center;
+        gap: 36px;
+    }
+    .c1 {
+        width: 40%;
+    }
+    .c2 {
+        width: 40%;
+    }
+    .c3 {
+        width: 40%;
+    }
+    .c4 {
+        width: 40%;
+    }
 }
