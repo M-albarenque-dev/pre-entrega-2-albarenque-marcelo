@@ -1,0 +1,53 @@
+/* MEDIA QUERIES */
+
+
+@media (max-width:685px) {
+
+    .banner-principal h1 {
+        font-size: 50px;
+    }
+
+    .banner-principal h2 {
+        font-size: 50px;
+    }
+
+    .banner-footer h2 {
+        position: absolute;
+        color: white;
+        font-size: 50px;
+        top: 3%;
+        left: 3%;
+        text-shadow: 0px 0px 8px rgb(0, 0, 0, 0.8);
+    }
+    
+    .banner-footer p {
+        font-family: 'Castoro Titling', cursive;
+        position: absolute;
+        color: white;
+        font-size: 10px;
+        bottom: 3%;
+        left: 3%;
+        text-shadow: 0px 0px 8px rgb(0, 0, 0, 0.8);
+    }
+
+}
+
+@media (max-width:870px) {
+    .tarjetas {
+        flex-direction: column;
+        align-items: center;
+        gap: 36px;
+    }
+    .c1 {
+        width: 40%;
+    }
+    .c2 {
+        width: 40%;
+    }
+    .c3 {
+        width: 40%;
+    }
+    .c4 {
+        width: 40%;
+    }
+}

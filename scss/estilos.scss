@@ -1,0 +1,15 @@
+//IMPORTS BASE
+@import 'base/vars';
+@import 'base/reset';
+
+//IMPORTS COMPONENTS
+@import 'components/navbar';
+@import 'components/footer';
+
+//IMPORTS LAYOUT
+@import 'layout/index';
+@import 'layout/mujer';
+@import 'layout/hombre';
+@import 'layout/nosotros';
+@import 'layout/servicio-al-cliente';
+@import 'layout/mediaquieries';

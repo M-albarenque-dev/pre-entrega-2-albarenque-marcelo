@@ -1,444 +1,412 @@
+@charset "UTF-8";
 /* GOOGLE FONTS */
-
-@import url('https://fonts.googleapis.com/css2?family=Castoro+Titling&family=Roboto&family=Roboto+Condensed:ital@1&display=swap');
-
+@import url("https://fonts.googleapis.com/css2?family=Castoro+Titling&family=Roboto&family=Roboto+Condensed:ital@1&display=swap");
 /* RESET */
-
 * {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
 
 a {
-    text-decoration: none;
+  text-decoration: none;
 }
 
 li {
-    list-style: none;
+  list-style: none;
 }
 
 body {
-    background-color: black;
-    font-family: 'Castoro Titling', cursive;
+  background-color: black;
+  font-family: "Castoro Titling", cursive;
 }
 
-
 /* HEADER */
-
-
 .bg-personalizado {
-    background-color: black;
-    padding: 15px;
+  background-color: black;
+  padding: 15px;
 }
 
 .nav-link, .navbar-brand {
-    color: bisque;
-    font-family: 'Castoro Titling', cursive;
-    font-size: 20px;
+  color: bisque;
+  font-family: "Castoro Titling", cursive;
+  font-size: 20px;
 }
 
 .nav-item {
-    border-radius: 15px;
-    padding: 10px;
-    transition: .3s;
+  border-radius: 15px;
+  padding: 10px;
+  transition: 0.3s;
 }
 
 .nav-item:hover, .navbar-brand:hover {
-    background-color: rgb(255, 234, 209);
-    border-radius: 15px;
-    color: bisque;
+  background-color: rgb(255, 234, 209);
+  border-radius: 15px;
+  color: bisque;
 }
 
 ul li {
-    display: inline-block;
-    margin: 0px 10px;
+  display: inline-block;
+  margin: 0px 10px;
 }
 
 ul li a {
-    color: bisque;
-    font-size: 1.4rem;
+  color: bisque;
+  font-size: 1.4rem;
 }
 
-/* MAIN */
-
 /* Banner principal */
-
 .banner-principal {
-    display: flex;
-    flex-direction: column;
-    position: relative;
-    width: 100%;
-    height: auto;
+  display: flex;
+  flex-direction: column;
+  position: relative;
+  width: 100%;
+  height: auto;
 }
 
 .banner-principal h1 {
-    position: absolute;
-    color: white;
-    font-size: 90px;
-    top: 30%;
-    left: 3%;
-    text-shadow: 0px 0px 8px rgb(0, 0, 0, 0.8);
+  position: absolute;
+  color: white;
+  font-size: 90px;
+  top: 30%;
+  left: 3%;
+  text-shadow: 0px 0px 8px rgba(0, 0, 0, 0.8);
 }
 
 .banner-principal h2 {
-    position: absolute;
-    color: white;
-    font-size: 90px;
-    top: 40%;
-    left: 35%;
-    text-shadow: 0px 0px 8px rgb(0, 0, 0, 0.8);
+  position: absolute;
+  color: white;
+  font-size: 90px;
+  top: 40%;
+  left: 35%;
+  text-shadow: 0px 0px 8px rgba(0, 0, 0, 0.8);
 }
 
 .banner-principal p {
-    font-family: 'Roboto Condensed', sans-serif;
-    position: absolute;
-    color: white;
-    font-size: 30px;
-    top: 50%;
-    left: 3%;
-    text-shadow: 0px 0px 8px rgb(0, 0, 0, 0.8);
+  font-family: "Roboto Condensed", sans-serif;
+  position: absolute;
+  color: white;
+  font-size: 30px;
+  top: 50%;
+  left: 3%;
+  text-shadow: 0px 0px 8px rgba(0, 0, 0, 0.8);
 }
 
 .banner-principal img {
-
-    width: 100%;
-    height: 800px;
-    object-fit: cover;
-    filter: opacity(80%);
+  width: 100%;
+  height: 800px;
+  object-fit: cover;
+  filter: opacity(80%);
 }
 
 /* Seccion "Look pensado para vos" */
-
 .look-titulo {
-    font-family: 'Castoro Titling', cursive;
-    font-size: 22px;
-    color: white;
-    display: flex;
-    justify-content: center;
-    align-self: center;
-    padding: 30px;
+  font-family: "Castoro Titling", cursive;
+  font-size: 22px;
+  color: white;
+  display: flex;
+  justify-content: center;
+  align-self: center;
+  padding: 30px;
 }
 
 .grilla-look {
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    grid-template-rows: repeat(3, 1fr);
-    gap: 15px;
-    grid-template-areas: 
-        'look1 look2 look3'
-        'look4 look5 look6'
-        'look7 look8 look9'
-    ;
-    padding: 0px 30px 30px 30px;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: repeat(3, 1fr);
+  gap: 15px;
+  grid-template-areas: "look1 look2 look3" "look4 look5 look6" "look7 look8 look9";
+  padding: 0px 30px 30px 30px;
 }
 
 .look {
-    width: 100%;
-    height: 100%;
-    background-color: rgb(209, 202, 161); 
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    border-radius: 20px;
-    box-shadow: 4px 4px 7px 0px #807e7eee;
+  width: 100%;
+  height: 100%;
+  background-color: rgb(209, 202, 161);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 20px;
+  box-shadow: 4px 4px 7px 0px rgba(128, 126, 126, 0.9333333333);
 }
 
 .look img {
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
-    border-radius: 20px;
-    border: 1px solid #A5C0DD;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border-radius: 20px;
+  border: 1px solid #A5C0DD;
 }
 
 .l1 {
-    grid-area: look1;
+  grid-area: look1;
 }
 
 .l2 {
-    grid-area: look3;
+  grid-area: look3;
 }
 
 .l3 {
-    grid-area: look5;
+  grid-area: look5;
 }
 
 .l4 {
-    grid-area: look7;
+  grid-area: look7;
 }
+
 .l5 {
-    grid-area: look9;
+  grid-area: look9;
 }
 
 .l6 {
-    grid-area: look2;
+  grid-area: look2;
 }
 
 .l7 {
-    grid-area: look4;
+  grid-area: look4;
 }
 
 .l8 {
-    grid-area: look6;
+  grid-area: look6;
 }
 
 .l9 {
-    grid-area: look8;
+  grid-area: look8;
 }
 
 /* Seccion banner this is virtu */
-
 .banner-footer {
-    display: flex;
-    flex-direction: column;
-    position: relative;
-    width: 100%;
-    height: auto;
+  display: flex;
+  flex-direction: column;
+  position: relative;
+  width: 100%;
+  height: auto;
 }
 
 .banner-footer h2 {
-    position: absolute;
-    color: white;
-    font-size: 90px;
-    top: 30%;
-    left: 3%;
-    text-shadow: 0px 0px 8px rgb(0, 0, 0, 0.8);
+  position: absolute;
+  color: white;
+  font-size: 90px;
+  top: 30%;
+  left: 3%;
+  text-shadow: 0px 0px 8px rgba(0, 0, 0, 0.8);
 }
 
 .banner-footer p {
-    font-family: 'Castoro Titling', cursive;
-    position: absolute;
-    color: white;
-    font-size: 20px;
-    bottom: 30%;
-    left: 3%;
-    text-shadow: 0px 0px 8px rgb(0, 0, 0, 0.8);
+  font-family: "Castoro Titling", cursive;
+  position: absolute;
+  color: white;
+  font-size: 20px;
+  bottom: 30%;
+  left: 3%;
+  text-shadow: 0px 0px 8px rgba(0, 0, 0, 0.8);
 }
 
 .banner-footer img {
-    width: 100%;
-    height: 800px;
-    object-fit: cover;
-    filter: opacity(60%);
+  width: 100%;
+  height: 800px;
+  object-fit: cover;
+  filter: opacity(60%);
 }
 
 /* Seccion mujer */
-
-
 /*TARJETAS*/
-
-
 .tarjetas {
-    display: flex;
-    padding: 30px 0px;
-    justify-content: space-evenly;
+  display: flex;
+  padding: 30px 0px;
+  justify-content: space-evenly;
 }
 
 .caja {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    border-radius: 4px;
-
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  border-radius: 4px;
 }
 
 .caja img {
-    width: 100%;
-    height: 300px;
-    object-fit: cover;
-    border-radius: 4px;
+  width: 100%;
+  height: 300px;
+  object-fit: cover;
+  border-radius: 4px;
 }
 
 .caja:hover {
-    box-shadow: 5px 5px 7px 3px #555;
-    transition: .5s;
+  box-shadow: 5px 5px 7px 3px #555;
+  transition: 0.5s;
 }
 
-
 .c1 {
-    background-color: bisque;
-    width: 20%;
+  background-color: bisque;
+  width: 20%;
 }
 
 .c2 {
-    background-color: bisque;
-    width: 20%;
+  background-color: bisque;
+  width: 20%;
 }
 
 .c3 {
-    background-color: bisque;
-    width: 20%;
+  background-color: bisque;
+  width: 20%;
 }
 
 .c4 {
-    background-color: bisque;
-    width: 20%;
+  background-color: bisque;
+  width: 20%;
 }
 
 .caja-content {
-    padding: 10px;
-    display: flex;
-    flex-direction: column;
-    gap: 1px;
-    cursor: default;
+  padding: 10px;
+  display: flex;
+  flex-direction: column;
+  gap: 1px;
+  cursor: default;
 }
 
 /* APLICAMOS HOVER EN LA OPCIÓN DE COMPRAR*/
-
 .caja-content a:hover {
-    background-color: white;
+  background-color: white;
 }
 
 .caja-content h2 {
-    text-align: center;
+  text-align: center;
 }
 
 .caja-content a {
-    color: black;
-    align-self: center;
-    padding: 5px;
-    border: 2px solid black;
-    border-radius: 10px;
+  color: black;
+  align-self: center;
+  padding: 5px;
+  border: 2px solid black;
+  border-radius: 10px;
 }
 
 .caja-content p {
-    text-align: center;
-    padding: 5px;
+  text-align: center;
+  padding: 5px;
 }
-
-/* <!-- SECCION NUESTRA MISION - NOSOTROS --> */
-
-.info {
-    display: flex;
-}
-
-.info-texto {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    text-align: center;
-    padding: 20px;
-    gap: 15px;
-}
-
-/* <!-- SECCION MAPA --> */
-
-.mapa {
-    display: flex;
-    width: 100%;
-    justify-content: center;
-}
-
-.mapa-texto {
-    display: flex;
-    flex-direction: column;
-    padding: 20px;
-    gap: 15px;
-}
-
-.mapa-texto iframe {
-    width: 100%;
-}
-
-/* <!-- SECCION IMG-NOSOTROS --> */
-
-.img-nosotros {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-    gap: 15px;
-    padding-bottom: 35px;
-}
-
-.img-nosotros img {
-    border-radius: 6px;
-    box-shadow: 4px 4px 7px 0px #807e7eee;
-}
-
 
 /* <!-- SECCION GUIA DE TALLES --> */
-
 .guia-talles {
-    display: flex;
-    flex-direction: column;
-    width: 100%;
-    height: auto;
-    padding-bottom: 30px;
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  height: auto;
+  padding-bottom: 30px;
 }
 
 .guia-talles h3 {
-    font-family: 'Castoro Titling', cursive;
-    font-size: 22px;
-    color: white;
-    display: flex;
-    justify-content: center;
-    align-self: center;
-    padding: 30px;
+  font-family: "Castoro Titling", cursive;
+  font-size: 22px;
+  color: white;
+  display: flex;
+  justify-content: center;
+  align-self: center;
+  padding: 30px;
 }
 
 .guia-talles img {
-    width: 80%;
-    height: 300px;
-    border-radius: 14px;
+  width: 80%;
+  height: 300px;
+  border-radius: 14px;
 }
 
 .guia-talle-img {
-    display: flex;
-    justify-content: center;
+  display: flex;
+  justify-content: center;
+}
+
+/* <!-- SECCION NUESTRA MISION - NOSOTROS --> */
+.info {
+  display: flex;
+}
+
+.info-texto {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  padding: 20px;
+  gap: 15px;
+}
+
+/* <!-- SECCION IMG-NOSOTROS --> */
+.img-nosotros {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 15px;
+  padding-bottom: 35px;
+}
+
+.img-nosotros img {
+  border-radius: 6px;
+  box-shadow: 4px 4px 7px 0px rgba(128, 126, 126, 0.9333333333);
+}
+
+/* <!-- SECCION MAPA --> */
+.mapa {
+  display: flex;
+  width: 100%;
+  justify-content: center;
+}
+
+.mapa-texto {
+  display: flex;
+  flex-direction: column;
+  padding: 20px;
+  gap: 15px;
+}
+
+.mapa-texto iframe {
+  width: 100%;
 }
 
 /* MEDIA QUERIES */
-
-
-@media (max-width:685px) {
-
-    .banner-principal h1 {
-        font-size: 50px;
-    }
-
-    .banner-principal h2 {
-        font-size: 50px;
-    }
-
-    .banner-footer h2 {
-        position: absolute;
-        color: white;
-        font-size: 50px;
-        top: 3%;
-        left: 3%;
-        text-shadow: 0px 0px 8px rgb(0, 0, 0, 0.8);
-    }
-    
-    .banner-footer p {
-        font-family: 'Castoro Titling', cursive;
-        position: absolute;
-        color: white;
-        font-size: 10px;
-        bottom: 3%;
-        left: 3%;
-        text-shadow: 0px 0px 8px rgb(0, 0, 0, 0.8);
-    }
-
+@media (max-width: 685px) {
+  .banner-principal h1 {
+    font-size: 50px;
+  }
+  .banner-principal h2 {
+    font-size: 50px;
+  }
+  .banner-footer h2 {
+    position: absolute;
+    color: white;
+    font-size: 50px;
+    top: 3%;
+    left: 3%;
+    text-shadow: 0px 0px 8px rgba(0, 0, 0, 0.8);
+  }
+  .banner-footer p {
+    font-family: "Castoro Titling", cursive;
+    position: absolute;
+    color: white;
+    font-size: 10px;
+    bottom: 3%;
+    left: 3%;
+    text-shadow: 0px 0px 8px rgba(0, 0, 0, 0.8);
+  }
+}
+@media (max-width: 870px) {
+  .tarjetas {
+    flex-direction: column;
+    align-items: center;
+    gap: 36px;
+  }
+  .c1 {
+    width: 40%;
+  }
+  .c2 {
+    width: 40%;
+  }
+  .c3 {
+    width: 40%;
+  }
+  .c4 {
+    width: 40%;
+  }
 }
 
-@media (max-width:870px) {
-    .tarjetas {
-        flex-direction: column;
-        align-items: center;
-        gap: 36px;
-    }
-    .c1 {
-        width: 40%;
-    }
-    .c2 {
-        width: 40%;
-    }
-    .c3 {
-        width: 40%;
-    }
-    .c4 {
-        width: 40%;
-    }
-}
+/*# sourceMappingURL=estilos.css.map */

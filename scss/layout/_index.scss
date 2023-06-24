@@ -1,0 +1,160 @@
+/* Banner principal */
+
+.banner-principal {
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    width: 100%;
+    height: auto;
+}
+
+.banner-principal h1 {
+    position: absolute;
+    color: white;
+    font-size: 90px;
+    top: 30%;
+    left: 3%;
+    text-shadow: 0px 0px 8px rgb(0, 0, 0, 0.8);
+}
+
+.banner-principal h2 {
+    position: absolute;
+    color: white;
+    font-size: 90px;
+    top: 40%;
+    left: 35%;
+    text-shadow: 0px 0px 8px rgb(0, 0, 0, 0.8);
+}
+
+.banner-principal p {
+    font-family: 'Roboto Condensed', sans-serif;
+    position: absolute;
+    color: white;
+    font-size: 30px;
+    top: 50%;
+    left: 3%;
+    text-shadow: 0px 0px 8px rgb(0, 0, 0, 0.8);
+}
+
+.banner-principal img {
+
+    width: 100%;
+    height: 800px;
+    object-fit: cover;
+    filter: opacity(80%);
+}
+
+/* Seccion "Look pensado para vos" */
+
+.look-titulo {
+    font-family: 'Castoro Titling', cursive;
+    font-size: 22px;
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-self: center;
+    padding: 30px;
+}
+
+.grilla-look {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(3, 1fr);
+    gap: 15px;
+    grid-template-areas: 
+        'look1 look2 look3'
+        'look4 look5 look6'
+        'look7 look8 look9'
+    ;
+    padding: 0px 30px 30px 30px;
+}
+
+.look {
+    width: 100%;
+    height: 100%;
+    background-color: rgb(209, 202, 161); 
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 20px;
+    box-shadow: 4px 4px 7px 0px #807e7eee;
+}
+
+.look img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 20px;
+    border: 1px solid #A5C0DD;
+}
+
+.l1 {
+    grid-area: look1;
+}
+
+.l2 {
+    grid-area: look3;
+}
+
+.l3 {
+    grid-area: look5;
+}
+
+.l4 {
+    grid-area: look7;
+}
+.l5 {
+    grid-area: look9;
+}
+
+.l6 {
+    grid-area: look2;
+}
+
+.l7 {
+    grid-area: look4;
+}
+
+.l8 {
+    grid-area: look6;
+}
+
+.l9 {
+    grid-area: look8;
+}
+
+/* Seccion banner this is virtu */
+
+.banner-footer {
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    width: 100%;
+    height: auto;
+}
+
+.banner-footer h2 {
+    position: absolute;
+    color: white;
+    font-size: 90px;
+    top: 30%;
+    left: 3%;
+    text-shadow: 0px 0px 8px rgb(0, 0, 0, 0.8);
+}
+
+.banner-footer p {
+    font-family: 'Castoro Titling', cursive;
+    position: absolute;
+    color: white;
+    font-size: 20px;
+    bottom: 30%;
+    left: 3%;
+    text-shadow: 0px 0px 8px rgb(0, 0, 0, 0.8);
+}
+
+.banner-footer img {
+    width: 100%;
+    height: 800px;
+    object-fit: cover;
+    filter: opacity(60%);
+}
